@@ -161,11 +161,6 @@ def echo_message(message):
         bot.send_photo(message.chat.id, open(path, 'rb'))
     except Exception as e:
         bot.send_message(message.chat.id, f"Произошла ошибка: {str(e)}")
-####
-    
-# Функция напоминалки
-    
-
 
 if __name__ == "__main__":
     bot.polling()
